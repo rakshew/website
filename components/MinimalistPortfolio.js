@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, Menu, Moon, Sun } from 'lucide-react';
-
 const MinimalistPortfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-
   useEffect(() => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setIsDarkMode(true);
     }
   }, []);
-
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-
   return (
     <div className={`min-h-screen font-serif transition-colors duration-300 ${
       isDarkMode ? 'dark bg-charcoal text-alabaster' : 'bg-alabaster text-charcoal'
@@ -42,7 +38,6 @@ const MinimalistPortfolio = () => {
             </button>
           </div>
         </header>
-
         {isMenuOpen && (
           <nav className="mb-8">
             <ul className="space-y-2">
@@ -53,7 +48,6 @@ const MinimalistPortfolio = () => {
             </ul>
           </nav>
         )}
-
         <main className="space-y-16">
           <section id="about">
             <div className="w-full h-64 bg-gray-200 mb-8 overflow-hidden">
@@ -63,7 +57,6 @@ const MinimalistPortfolio = () => {
               Hello there! I am Rakshita, a dedicated Business Administration student at the National University of Singapore with a keen interest in blockchain technology and decentralized applications. I am actively exploring the intersection of finance, marketing, and blockchain, while actively contributing to various projects in the web3 space.
             </p>
           </section>
-
           <section id="articles">
             <h2 className="font-serif text-3xl mb-6">Featured Articles</h2>
             <ul className="space-y-8">
@@ -93,40 +86,7 @@ const MinimalistPortfolio = () => {
                   </a>
                 </li>
               ))}
-            </ul>
-          </section>
-
-          <section id="muse">
-            <h2 className="font-serif text-3xl mb-6">Sources of Muse</h2>
-            <div className="space-y-12">
-              <div>
-                <h3 className="font-serif text-2xl mb-4 italic">Kumizh</h3>
-                <p className="mb-4 text-lg">Read my lit substack</p>
-                <a href="https://www.kumizh.substack.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/kumizh.jpg" alt="Kumizh Substack" className="w-full h-64 object-cover" />
-                </a>
-              </div>
-              <div>
-                <h3 className="font-serif text-2xl mb-4 italic">Image Collage</h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <img key={i} src={`/images/collage${i}.jpg`} alt={`Collage Image ${i}`} className="w-full h-auto object-cover" />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="connect">
-            <h2 className="font-serif text-3xl mb-4">Connect</h2>
-            <p className="mb-4 text-lg">
-              Find me on{' '}
-              <a href="https://linkedin.com/in/rakshitamurugan" className="underline hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or{' '}
-              <a href="mailto:your.email@example.com" className="underline hover:opacity-80 transition-opacity">send me an email</a>.
-            </p>
-            <button className={`mt-4 px-6 py-2 rounded transition-colors duration-300 ${isDarkMode ? 'bg-alabaster text-charcoal' : 'bg-charcoal text-alabaster'}`}>
-              Contact Me
-            </button>
+	@@ -130,7 +130,7 @@ const MinimalistPortfolio = () => {
           </section>
         </main>
 
@@ -134,8 +94,3 @@ const MinimalistPortfolio = () => {
           <p>&copy; 2024 Rakshita Murugan. All rights reserved.</p>
         </footer>
       </div>
-    </div>
-  );
-};
-
-export default MinimalistPortfolio;
