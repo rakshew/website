@@ -25,18 +25,18 @@ const MinimalistPortfolio = () => {
           <div className="flex items-center space-x-4">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)} 
-              className={`p-2 focus:outline-none ${isDarkMode ? 'bg-alabaster' : ''}`}
+              className="p-2 focus:outline-none"
               aria-label="Toggle menu"
             >
-              <Menu className={`h-6 w-6 ${isDarkMode ? 'text-charcoal' : 'text-charcoal'}`} />
+              <Menu className={`h-6 w-6 ${isDarkMode ? 'text-alabaster' : 'text-charcoal'}`} />
             </button>
             <button
               onClick={toggleDarkMode}
-              className={`focus:outline-none ${isDarkMode ? 'bg-alabaster' : ''}`}
+              className="focus:outline-none"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? 
-                <Sun className="h-6 w-6 text-charcoal" /> : 
+                <Sun className="h-6 w-6 text-alabaster" /> : 
                 <Moon className="h-6 w-6 text-charcoal" />
               }
             </button>
@@ -122,7 +122,7 @@ const MinimalistPortfolio = () => {
             <p className="mb-4 text-lg">
               Find me on{' '}
               <a href="https://linkedin.com/in/rakshitamurugan" className="underline hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or{' '}
-              <a href="mailto:rakshimuuu@email.com" className="underline hover:opacity-80 transition-opacity">send me an email</a>.
+              <a href="mailto:your.email@example.com" className="underline hover:opacity-80 transition-opacity">send me an email</a>.
             </p>
             <button className={`mt-4 px-6 py-2 rounded transition-colors duration-300 ${isDarkMode ? 'bg-alabaster text-charcoal' : 'bg-charcoal text-alabaster'}`}>
               Contact Me
