@@ -25,14 +25,14 @@ const MinimalistPortfolio = () => {
           <div className="flex items-center space-x-4">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)} 
-              className="p-2 focus:outline-none"
+              className={`p-2 focus:outline-none ${isDarkMode ? 'border border-black rounded' : ''}`}
               aria-label="Toggle menu"
             >
               <Menu className={`h-6 w-6 ${isDarkMode ? 'text-alabaster' : 'text-charcoal'}`} />
             </button>
             <button
               onClick={toggleDarkMode}
-              className="focus:outline-none"
+              className={`focus:outline-none ${isDarkMode ? 'border border-black rounded' : ''}`}
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? 
