@@ -2,4 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add any global styles here */
+/* Custom styles */
+body {
+    font-family: serif;
+}
+
+.bg-beige {
+    background-color: #F5F5DC;
+}
+
+.text-charcoal {
+    color: #1A1A1A;
+}
+
+.bg-charcoal {
+    background-color: #1A1A1A;
+}
+
+.text-beige {
+    color: #F5F5DC;
+}
