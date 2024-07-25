@@ -7,18 +7,15 @@ body {
     font-family: serif;
 }
 
-.bg-alabaster {
-    background-color: #E7E5D9;
+/* Dark mode styles */
+.dark {
+    @apply bg-charcoal text-beige;
 }
 
-.text-charcoal {
-    color: #1A1A1A;
+.dark a {
+    @apply text-beige hover:text-gray-300;
 }
 
-.bg-charcoal {
-    background-color: #1A1A1A;
-}
-
-.text-alabaster {
-    color: #E7E5D9;
+.dark button {
+    @apply bg-beige text-charcoal;
 }
