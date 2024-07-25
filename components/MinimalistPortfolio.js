@@ -81,7 +81,7 @@ const MinimalistPortfolio = () => {
                   url: "https://mirror.xyz/0x832397b6B371905402F7aA50340dabD1f8Ebb656/_Rfi3LS0SYTi-QciAFFsYFymMEbqcfVQztLmb1NpZ9A"
                 }
               ].map((post, index) => (
-                <li key={index} className="pb-4 border-b border-gray-200 last:border-b-0">
+                <li key={index} className="pb-4 border-b border-gray-200 dark:border-gray-700 last:border-b-0">
                   <a 
                     href={post.url} 
                     className="font-serif text-xl hover:underline flex items-center justify-between group"
@@ -89,7 +89,7 @@ const MinimalistPortfolio = () => {
                     rel="noopener noreferrer"
                   >
                     <span>{post.title}</span>
-                    <ExternalLink className="h-4 w-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ExternalLink className={`h-4 w-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity ${isDarkMode ? 'text-alabaster' : 'text-charcoal'}`} />
                   </a>
                 </li>
               ))}
@@ -130,7 +130,7 @@ const MinimalistPortfolio = () => {
           </section>
         </main>
 
-        <footer className="mt-16 pt-8 border-t border-gray-200 text-center text-sm">
+        <footer className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm">
           <p>&copy; 2024 Rakshita Murugan. All rights reserved.</p>
         </footer>
       </div>
