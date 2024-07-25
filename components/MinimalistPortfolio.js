@@ -17,7 +17,7 @@ const MinimalistPortfolio = () => {
 
   return (
     <div className={`min-h-screen font-serif transition-colors duration-300 ${
-      isDarkMode ? 'bg-charcoal text-alabaster' : 'bg-alabaster text-charcoal'
+      isDarkMode ? 'bg-[#1A1A1A] text-[#E7E5D9]' : 'bg-[#E7E5D9] text-[#1A1A1A]'
     }`}>
       <div className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-16 flex justify-between items-center">
@@ -25,7 +25,7 @@ const MinimalistPortfolio = () => {
           <div className="flex items-center space-x-4">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)} 
-              className={`p-2 rounded ${isDarkMode ? 'bg-alabaster text-charcoal' : 'bg-charcoal text-alabaster'}`}
+              className={`p-2 rounded ${isDarkMode ? 'bg-[#E7E5D9] text-[#1A1A1A]' : 'bg-[#1A1A1A] text-[#E7E5D9]'}`}
               aria-label="Toggle menu"
             >
               <Menu className="h-6 w-6" />
@@ -35,7 +35,7 @@ const MinimalistPortfolio = () => {
               className="focus:outline-none"
               aria-label="Toggle dark mode"
             >
-              {isDarkMode ? <Sun className="h-6 w-6 text-alabaster" /> : <Moon className="h-6 w-6 text-charcoal" />}
+              {isDarkMode ? <Sun className="h-6 w-6 text-[#E7E5D9]" /> : <Moon className="h-6 w-6 text-[#1A1A1A]" />}
             </button>
           </div>
         </header>
@@ -121,7 +121,7 @@ const MinimalistPortfolio = () => {
               <a href="https://linkedin.com/in/rakshitamurugan" className="underline hover:opacity-80 transition-opacity" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or{' '}
               <a href="mailto:rakshimuuu@email.com" className="underline hover:opacity-80 transition-opacity">send me an email</a>.
             </p>
-            <button className={`mt-4 px-6 py-2 rounded transition-colors duration-300 ${isDarkMode ? 'bg-alabaster text-charcoal' : 'bg-charcoal text-alabaster'}`}>
+            <button className={`mt-4 px-6 py-2 rounded transition-colors duration-300 ${isDarkMode ? 'bg-[#E7E5D9] text-[#1A1A1A]' : 'bg-[#1A1A1A] text-[#E7E5D9]'}`}>
               Contact Me
             </button>
           </section>
