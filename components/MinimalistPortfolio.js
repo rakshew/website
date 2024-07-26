@@ -57,8 +57,14 @@ const MinimalistPortfolio = () => {
 
         <main className="space-y-16">
           <section id="about">
-            <div className="w-full h-64 bg-gray-200 mb-8 overflow-hidden">
-              <img src="/images/profile.jpg" alt="Rakshita Murugan" className="w-full h-full object-cover" />
+            <div className="w-full aspect-[3097/1889] mb-8 overflow-hidden">
+              <img 
+                src="/images/profile.jpg" 
+                alt="Rakshita Murugan" 
+                className="w-full h-full object-cover"
+                width={3097}
+                height={1889}
+              />
             </div>
             <p className="text-lg leading-relaxed">
               Hello! I'm Rakshita, a passionate Business Administration student at the National University of Singapore with a keen interest in blockchain technology and decentralized applications. I'm currently exploring the intersection of finance, marketing, and blockchain, while actively contributing to various projects in the web3 space.
@@ -104,7 +110,15 @@ const MinimalistPortfolio = () => {
                 <h3 className="font-serif text-2xl mb-4 italic">Kumizh</h3>
                 <p className="mb-4 text-lg">Read my lit substack</p>
                 <a href="https://www.kumizh.substack.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/kumizh.jpg" alt="Kumizh Substack" className="w-full h-64 object-cover" />
+                  <div className="w-full aspect-[3097/1889] overflow-hidden">
+                    <img 
+                      src="/images/kumizh.jpg" 
+                      alt="Kumizh Substack" 
+                      className="w-full h-full object-cover"
+                      width={3097}
+                      height={1889}
+                    />
+                  </div>
                 </a>
               </div>
               <div>
