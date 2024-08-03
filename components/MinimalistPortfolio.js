@@ -109,7 +109,7 @@ const MinimalistPortfolio = () => {
               <div>
                 <h3 className="font-serif text-2xl mb-4 italic">Kumizh</h3>
                 <p className="mb-4 text-lg">Read my lit substack</p>
-                <a href="https://www.kumizh.substack.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://kumizh.substack.com/welcome" target="_blank" rel="noopener noreferrer">
                   <div className="w-full aspect-[3097/1889] overflow-hidden">
                     <img 
                       src="/images/kumizh.jpg" 
